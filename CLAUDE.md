@@ -1,55 +1,54 @@
-# ValiOS — Sistema operativo del negocio
+# ValiOS — Reglas de operación
 
-Tu empresa corre sobre este archivo. Aquí están las reglas de operación
-de ValiOS — cómo Claude lee el contexto, aprende de correcciones, mantiene
-todo actualizado y crea skills nuevas.
-
----
-
-## Contexto del negocio
-
-Al inicio de cada conversación, leer:
-1. `_memoria/empresa.md`
-2. `_memoria/preferencias.md`
-3. `_memoria/estrategia.md`
-
-Para tareas visuales, consultar `identidad/design-guide.md`.
-Usar el contexto de forma natural, sin listar lo leído.
+Este archivo define cómo trabaja Claude dentro del ValiOS de Valvirtual.
+Lee esto antes de cualquier cosa.
 
 ---
 
-## Flujo de trabajo
+## Antes de empezar
 
-Verificar si existe skill en `.claude/skills/` antes de ejecutar cualquier tarea.
-Al completar tarea repetible, preguntar:
-> "Esto puede convertirse en una skill. ¿Quieres que la cree?"
+Al inicio de cada conversación, carga siempre:
+1. `_memoria/empresa.md` — quién es este negocio
+2. `_memoria/preferencias.md` — cómo le gusta trabajar
+3. `_memoria/estrategia.md` — qué está en foco ahora
 
----
-
-## Aprender de correcciones
-
-Cuando el usuario corrija algo o dé instrucción permanente, preguntar:
-> "¿Quieres que lo guarde para no tener que repetirlo?"
-
-Guardar en:
-- Negocio → `_memoria/empresa.md`
-- Preferencias → `_memoria/preferencias.md`
-- Prioridades → `_memoria/estrategia.md`
-- Regla general → `CLAUDE.md`
+Para trabajo visual, consulta también `identidad/design-guide.md`.
+Aplica el contexto directamente — no hace falta listar lo que leíste.
 
 ---
 
-## Mantener contexto actualizado
+## Cómo ejecutar tareas
 
-Al terminar tarea que cambió algo relevante, preguntar:
-> "Esto cambió algo en tu contexto. ¿Quieres que actualice la memoria?"
-
-Ejecuta `/actualizar` para escaneo completo.
+Antes de cualquier tarea, verifica si ya existe una skill en `.claude/skills/`.
+Si existe, úsala. Si no existe y la tarea es repetible, pregunta al final:
+> "Esta tarea podría convertirse en una skill. ¿Quieres que la cree?"
 
 ---
 
-## Creación de skills
+## Cuando el usuario corrija algo
 
-1. Verificar templates en `templates/skills/`
-2. Preguntar si es local o global
-3. Calibrar con `_memoria/empresa.md` y `_memoria/preferencias.md`
+Si das una instrucción permanente o corriges mi comportamiento, pregunto:
+> "¿Lo guardo para no tener que repetirlo la próxima vez?"
+
+Qué guardar y dónde:
+- Sobre el negocio → `_memoria/empresa.md`
+- Preferencias de trabajo → `_memoria/preferencias.md`
+- Foco y prioridades → `_memoria/estrategia.md`
+- Regla de comportamiento → aquí en `CLAUDE.md`
+
+---
+
+## Mantener la memoria actualizada
+
+Cuando una sesión cambie algo importante, pregunto:
+> "Esto cambió algo relevante. ¿Actualizamos la memoria?"
+
+También puedes ejecutar `/actualizar` en cualquier momento para una revisión completa.
+
+---
+
+## Crear una skill nueva
+
+1. Ver los templates disponibles en `templates/skills/`
+2. Preguntar si la skill es local (solo este proyecto) o global
+3. Adaptar al contexto del negocio usando `_memoria/empresa.md` y `_memoria/preferencias.md`
