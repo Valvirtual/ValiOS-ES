@@ -1,29 +1,27 @@
-# ValiOS
+# ValiOS — ES
 
-> El sistema operativo de tu negocio dentro de Claude Code.
+> El sistema de gestión de tu negocio dentro de Claude Code, por Valvirtual.
 
-Acabas de instalar ValiOS. En pocos minutos, tu empresa tendrá memoria propia,
-identidad visual aplicada en todo lo que el sistema genere, y 15 skills listas
-para marketing, SEO, anuncios y operación.
-
-Vamos.
+ValiOS es la forma en que Valvirtual organiza, automatiza y opera todo — contenido, SEO, anuncios y comunicación — dentro de Claude Code. Un único entorno con memoria del negocio, identidad visual aplicada y skills listas para usar.
 
 ---
 
-## Encendiendo el sistema
+## Cómo instalar
 
 ### Desde Claude (más rápido)
 
+Abre Claude Code en la carpeta donde quieres instalar y pega:
+
 ```
-Clona https://github.com/valios/ValiOS.git en la carpeta actual,
-entra en ella y ejecuta el /instalar.
+Clona https://github.com/Valvirtual/ValiOS-ES.git en la carpeta actual,
+entra en ella y ejecuta /instalar.
 ```
 
 ### Desde terminal
 
 ```
-git clone https://github.com/valios/ValiOS.git
-cd ValiOS
+git clone https://github.com/Valvirtual/ValiOS-ES.git
+cd ValiOS-ES
 code .
 ```
 
@@ -31,14 +29,14 @@ Terminal integrado → `claude` → `/instalar`.
 
 ---
 
-Cuando `/instalar` termine, renombra la carpeta `ValiOS/` con el nombre de tu negocio.
-`/instalar` se ejecuta una sola vez. Después, solo úsalo.
+Cuando `/instalar` termine, renombra la carpeta con el nombre de tu proyecto.
+`/instalar` se ejecuta una sola vez. Después, solo trabaja.
 
 ---
 
-## El sistema
+## Qué incluye
 
-**Núcleo**
+**Núcleo — operación diaria**
 `/abrir` · `/guardar` · `/actualizar` · `/nuevo-proyecto` · `/mapear-rutinas`
 
 **Contenido y SEO**
@@ -52,23 +50,16 @@ Cuando `/instalar` termine, renombra la carpeta `ValiOS/` con el nombre de tu ne
 
 ---
 
-## La tesis
+## Cómo funciona
 
-La IA no es una herramienta que usa tu empresa. Es el sistema operativo en el que corre.
+`_memoria/` guarda todo lo que importa saber sobre tu negocio — empresa, estrategia, preferencias.
+`identidad/` define lo visual — colores, fuentes, logo.
+`marketing/`, `salidas/` y `scripts/` son donde aparecen los resultados.
 
-Una persona con IA construye lo que antes requería un equipo entero. Cada proceso crítico
-se convierte en closed loop dentro de ValiOS — decide → ejecuta → captura → realimenta → se ajusta solo.
-
----
-
-## Cómo piensa ValiOS
-
-`_memoria/` es el cerebro. Todo lo que importa de tu negocio vive aquí.
-`identidad/` es el rostro. Colores, fuentes, logo, patrón visual.
-`marketing/`, `salidas/` y `scripts/` son el resultado.
+Cada vez que trabajas, el sistema aprende. Cada proceso repetido se convierte en una skill. El negocio se vuelve cada vez más autónomo.
 
 ---
 
-## Cuando lo necesites
+## Creado por
 
-[valios.com](https://valios.com)
+[Valvirtual](https://valvirtual.com) — Automatización e inteligencia artificial para tu negocio.
