@@ -1,7 +1,5 @@
 .DS_Store
 Thumbs.db
 *.env
-salidas/*
-!salidas/.gitkeep
 datos/*.xlsx
 datos/*.csv
